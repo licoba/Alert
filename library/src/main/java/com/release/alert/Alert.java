@@ -403,8 +403,9 @@ public class Alert {
      * @return
      */
     public Alert addItem(String strItem, int color) {
-        if (mAlertViewItems != null)
+        if (mAlertViewItems != null) {
             mAlertViewItems.add(new ItemBean(strItem, color));
+        }
         return this;
     }
 
@@ -426,8 +427,9 @@ public class Alert {
 
     public Alert addItem(List<ItemBean> strItem) {
         if (mAlertViewItems != null && strItem != null) {
-            for (ItemBean bean : strItem)
+            for (ItemBean bean : strItem) {
                 mAlertViewItems.add(bean);
+            }
         }
 
         return this;
