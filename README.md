@@ -10,6 +10,8 @@ Alert
 
 ## 用法
 
+最新的版本参考这里：https://jitpack.io/#licoba/Alert
+
 >Android Studio
 
 将其添加到存储库build.gradle中
