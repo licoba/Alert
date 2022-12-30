@@ -198,7 +198,7 @@ public class Alert {
         return this;
     }
 
-    public Alert setBottomCancelBtnText(text:String) {
+    public Alert setBottomCancelBtnText(String text) {
         if (txt_cancel != null) {
             txt_cancel.setText(text);
         }
