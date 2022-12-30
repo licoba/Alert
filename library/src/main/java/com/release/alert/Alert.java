@@ -191,12 +191,6 @@ public class Alert {
         return this;
     }
 
-    public Alert setBottomCancelBtnColor(@ColorInt int color) {
-        if (txt_cancel != null) {
-            txt_cancel.setTextColor(color);
-        }
-        return this;
-    }
 
     public Alert setBottomCancelBtnText(String text) {
         if (txt_cancel != null) {
@@ -221,7 +215,9 @@ public class Alert {
     }
 
     public Alert setProgressTextGone() {
-        if (mProMsgText != null) mProMsgText.setVisibility(View.GONE);
+        if (mProMsgText != null) {
+            mProMsgText.setVisibility(View.GONE);
+        }
         return this;
     }
 
@@ -256,8 +252,9 @@ public class Alert {
     }
 
     public Alert setMsgGravity(int gravity) {
-        if (txt_msg != null)
+        if (txt_msg != null) {
             txt_msg.setGravity(gravity);
+        }
         return this;
     }
 
@@ -412,15 +409,17 @@ public class Alert {
     }
 
     public Alert addItem(String strItem) {
-        if (mAlertViewItems != null)
+        if (mAlertViewItems != null) {
             mAlertViewItems.add(new ItemBean(strItem, 0));
+        }
         return this;
     }
 
     public Alert addItem(String[] strItem) {
         if (mAlertViewItems != null) {
-            for (String s : strItem)
+            for (String s : strItem) {
                 mAlertViewItems.add(new ItemBean(s, 0));
+            }
         }
         return this;
     }
@@ -435,8 +434,9 @@ public class Alert {
     }
 
     private void notifyData() {
-        if (mAlertViewItems == null || mAlertViewItems.size() <= 0)
+        if (mAlertViewItems == null || mAlertViewItems.size() <= 0) {
             return;
+        }
         if (mAlertViewItems.size() == 1) {
 
         }
