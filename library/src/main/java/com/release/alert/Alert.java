@@ -191,6 +191,21 @@ public class Alert {
         return this;
     }
 
+    public Alert setBottomCancelBtnColor(@ColorInt int color) {
+        if (txt_cancel != null) {
+            txt_cancel.setTextColor(color);
+        }
+        return this;
+    }
+
+    public Alert setBottomCancelBtnText(text:String) {
+        if (txt_cancel != null) {
+            txt_cancel.setText(text);
+        }
+        return this;
+    }
+
+
     /**
      * 设置标题
      *
